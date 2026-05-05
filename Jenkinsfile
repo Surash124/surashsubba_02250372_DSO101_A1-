@@ -8,6 +8,7 @@ pipeline {
     stage('Checkout') {
       steps {
         git branch: 'main',
+            credentialsId: 'github-creds',
             url: 'https://github.com/Surash124/surashsubba_02250372_DSO101_A1-.git'
       }
     }
@@ -15,7 +16,7 @@ pipeline {
     stage('Install') {
       steps {
         dir('todo-app/backend') {
-          sh 'npm install'
+          bat 'npm install'
         }
       }
     }
@@ -23,7 +24,7 @@ pipeline {
     stage('Test') {
       steps {
         dir('todo-app/backend') {
-          sh 'npm test'
+          bat 'npm test'
         }
       }
       post {
