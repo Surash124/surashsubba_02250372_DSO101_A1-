@@ -8,7 +8,7 @@ pipeline {
     stage('Checkout') {
       steps {
         git branch: 'main',
-            url: 'https://github.com/surashsubba/surashsubba_02250372_DSO101_A1.git'
+            url: 'https://github.com/Surash124/surashsubba_02250372_DSO101_A1-.git'
       }
     }
 
