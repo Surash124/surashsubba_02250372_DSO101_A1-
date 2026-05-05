@@ -35,12 +35,15 @@ pipeline {
     }
 
     stage('Deploy') {
-  steps {
-    script {
-      docker.build('surashsubba/be-todo:latest', 'todo-app/backend')
-      docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-creds') {
-        docker.image('surashsubba/be-todo:latest').push()
+      steps {
+        script {
+          docker.build('surashsubba/be-todo:latest', 'todo-app/backend')
+          docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-creds') {
+            docker.image('surashsubba/be-todo:latest').push()
+          }
+        }
       }
     }
+
   }
 }
