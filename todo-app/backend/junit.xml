@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="0" errors="0" time="1.022">
+  <testsuite name="Todo API" errors="0" failures="0" skipped="0" timestamp="2026-05-05T10:08:42" time="0.924" tests="5">
+    <testcase classname="Todo API GET / should return API running message" name="Todo API GET / should return API running message" time="0.073">
+    </testcase>
+    <testcase classname="Todo API GET /api/todos should return list of todos" name="Todo API GET /api/todos should return list of todos" time="0.004">
+    </testcase>
+    <testcase classname="Todo API POST /api/todos should create a new todo" name="Todo API POST /api/todos should create a new todo" time="0.028">
+    </testcase>
+    <testcase classname="Todo API POST /api/todos should fail if title is missing" name="Todo API POST /api/todos should fail if title is missing" time="0.003">
+    </testcase>
+    <testcase classname="Todo API DELETE /api/todos/:id should return 404 if todo not found" name="Todo API DELETE /api/todos/:id should return 404 if todo not found" time="0.004">
+    </testcase>
+  </testsuite>
+</testsuites>
