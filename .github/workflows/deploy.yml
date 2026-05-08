@@ -23,13 +23,13 @@ jobs:
       # 3. Build and push backend image
       - name: Build and Push Backend
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/be-todo:latest ./backend
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/be-todo:latest ./todo-app/backend
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/be-todo:latest
 
       # 4. Build and push frontend image
       - name: Build and Push Frontend
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/fe-todo:latest ./frontend
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/fe-todo:latest ./todo-app/frontend
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/fe-todo:latest
 
       # 5. Trigger backend redeployment on Render
