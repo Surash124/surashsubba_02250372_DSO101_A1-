@@ -50,7 +50,7 @@ To perform basic Docker operations such as running, managing, and removing conta
 ### 4
 ![KodeKloud1](/screenshots/4.png)
 
-### 4
+### 5
 ![KodeKloud1](/screenshots/5.png)
 
 ### 6
